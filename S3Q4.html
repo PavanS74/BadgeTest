@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #screen{
+            width: 100%;
+            height: 90vh;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #display{
+            width: 33%;
+            height: 60vh;
+            background-color: aquamarine;
+            border-radius: 20px;
+            display: none;
+        }
+        #display h1 {
+            text-align: center;
+
+        }
+        #display p{
+            text-align: justify;
+            padding: 10px;
+        }
+        #display img{
+            width: 100%;
+            height: 30vh;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: blue;
+        }
+        #bt1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen" onclick="Clear()">
+        <div id="display">
+            <h1>Hello Friend's</h1>
+            <img src="assets/img/forest.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisiuas nostrum dolorum culpa dolor ducimus aliquam adipisci.</p>
+        </div>
+        <br>
+        <button type="button" id="bt" onclick="Open()">Click to Open</button>
+        <button type="button" id="bt1" onclick="Close()">Click to Close</button>
+    </div>
+</body>
+<script>
+    let btn =document.getElementById("bt");
+    let btn1 =document.getElementById("bt1");
+    function Open(){
+        let dis = document.getElementById("display");
+        dis.style.display="Block";
+        btn.style.display="none";
+        btn1.style.display="block";
+    }
+    function Close(){
+        let dis = document.getElementById("display");
+        dis.style.display="none";
+        btn.style.display="block";
+        btn1.style.display="none";
+    }
+</script>
+</html>

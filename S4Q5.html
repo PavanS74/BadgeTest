@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 30%;
+            height: fit-content;
+            padding: 50px;
+            background-color: lightgray;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table tr td{
+            padding: 20px;
+            font-size: larger;
+            font-weight: bolder;
+            color: red;
+        }
+        table tr td:hover label{
+            color: black;
+        }
+        button{
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name</label>
+                    </td>
+                    <td><input type="text" name="name"  id="name" placeholder="Enter your Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="ph">Mobile</label></td>
+                    <td><input type="number" name="phone" id="ph" placeholder="Enter your Number" required></td>
+                </tr>
+                <tr>
+                    <td><label for="male">Male</label></td>
+                    <td><input type="radio" name="gender" id="male" value="male" ></td>
+                </tr>
+                <tr>
+                    <td><label for="female">Female</label></td>
+                    <td><input type="radio" name="gender" id="female" value="female"></td>
+                </tr>
+                <tr>
+                    <td><label for="l1">Kannada</label></td>
+                    <td>
+                        <input type="checkbox" name="language" id="l1" value="Kannada">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="l2">English</label></td>
+                    <td>
+                        <input type="checkbox" name="language" id="l2" value="English">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="l3">Hindi</label></td>
+                    <td>
+                        <input type="checkbox" name="language" id="l3" value="Hindi">
+                    </td>
+                </tr>
+            </table>
+            
+            
+            
+            
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+</html>
